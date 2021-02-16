@@ -1,38 +1,87 @@
 import React from "react"
 import { Link } from "gatsby"
-import headerStyles from "../styles/components/header.module.scss"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-export default function Header(props) {
+import { above } from "../styles"
+
+const Header = ({ page, title }) => {
   return (
-    <header
-      className={`${headerStyles.header} ${props.page === 'info' &&
-        headerStyles.info_page}`}
-    >
-      <nav
-        className={headerStyles.header__nav}
+    <HeaderWrapper>
+      <HeaderNav
         role="navigation"
         aria-label="main navigation"
       >
         <Link to="/">
-          <h1>{props.title}</h1>
+          <Title>{title}</Title>
         </Link>
         <div>
-          <h1>
+          <AboutLink>
             <Link
               to={
-                props.page === 'info'
+                page === 'info'
                   ? "/"
                   : "/info"
               }
-              activeClassName={headerStyles.navItemActive}
             >
-              {props.page === 'info'
+              {page === 'info'
                 ? "close"
                 : "info"}
             </Link>
-          </h1>
+          </AboutLink>
         </div>
-      </nav>
-    </header>
+      </HeaderNav>
+    </HeaderWrapper>
   )
 }
+
+const HeaderWrapper = styled.header`
+  ${above.tablet`
+    height: 100vh;
+    width: 30%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  `}
+`
+
+const HeaderNav = styled.nav`
+  padding: 1.5rem 1.25rem;
+  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  ${above.tablet`
+    padding: 2rem;
+    height: 100%;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+  `}
+
+  img {
+    margin-bottom: 0;
+
+    ${above.tablet`
+      margin-bottom: 0;
+    `}
+  }
+`
+
+const Title = styled.h1`
+  margin-bottom: 0;
+`
+
+const AboutLink = styled.h2`
+  margin-bottom: 0;
+`
+
+Header.propTypes = {
+  page: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
+
+export default Header

@@ -57,7 +57,7 @@ const Children = styled.div`
 Layout.propTypes = {
   page: PropTypes.string.isRequired,
   bgColor: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
