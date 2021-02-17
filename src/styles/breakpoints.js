@@ -2,7 +2,7 @@ import { css } from "styled-components"
 
 export const breakpoint = {
   tablet: "768px",
-  tabletLarge: "1280px",
+  desktop: "1280px",
   desktopLarge: "1440px",
 }
 
