@@ -13,6 +13,8 @@ export default function useSiteMetadata() {
               email
               github_handle
               twitter_handle
+              linkedin_handle
+              codepen_handle
             }
             description
             background_color
