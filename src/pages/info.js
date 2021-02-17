@@ -1,37 +1,64 @@
 import React from "react"
+import styled from "styled-components"
+
 import Layout from "../components/Layout"
 import infoStyles from "../styles/pages/info.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
+import { above } from "../styles"
 
-export default function Info() {
+const Info = () => {
   const { infoData } = useSiteMetaData()
   return (
     <Layout page="info" bgColor={infoData.background_color}>
-      <section className={infoStyles.info_blurb}>
+      <InfoBlurb className={infoStyles.info_blurb}>
         <h2>
           <div dangerouslySetInnerHTML={{__html: infoData.description}}></div>
-          <div dangerouslySetInnerHTML={{__html: infoData.cta}}></div>
         </h2>
         <ul>
           <li>
             <p>
-              <a href={`mailto:${infoData.contact.email}`}>Email: {infoData.contact.email}</a>
+              <a target="blank" rel="noopener noreferrer" href={`mailto:${infoData.contact.email}`}>Email: {infoData.contact.email}</a>
             </p>
           </li>
           <li>
             <p>
-              <a href={`https://twitter.com/${infoData.contact.twitter_handle}`}>
+              <a target="blank" rel="noopener noreferrer" href={`https://twitter.com/${infoData.contact.twitter_handle}`}>
                 Twitter: @{infoData.contact.twitter_handle}
               </a>
             </p>
           </li>
           <li>
             <p>
-              <a href={`https://github.com/${infoData.contact.github_handle}`}>Github: {infoData.contact.github_handle}</a>
+              <a target="blank" rel="noopener noreferrer" href={`https://github.com/${infoData.contact.github_handle}`}>Github: {infoData.contact.github_handle}</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a target="blank" rel="noopener noreferrer" href={`https://www.linkedin.com/in/${infoData.contact.linkedin_handle}`}>LinkedIn: {infoData.contact.github_handle}</a>
             </p>
           </li>
         </ul>
-      </section>
+      </InfoBlurb>
     </Layout>
   )
 }
+
+const InfoBlurb = styled.section`
+  max-width: 800px;
+  padding: 1.5rem 1.25rem;
+
+  p {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  ${above.tablet`
+    padding: 2rem;
+  `}
+
+  ${above.desktopLarge`
+    padding: 3rem;
+  `}
+`
+
+export default Info

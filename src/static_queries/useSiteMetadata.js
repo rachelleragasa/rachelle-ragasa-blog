@@ -14,7 +14,6 @@ export default function useSiteMetadata() {
               github_handle
               twitter_handle
             }
-            cta
             description
             background_color
           }

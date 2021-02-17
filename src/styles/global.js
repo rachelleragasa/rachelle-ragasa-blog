@@ -1,10 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 
-import reset from './reset'
+import reset from "./reset"
 
 const GlobalStyles = createGlobalStyle`
   ${reset};
-  @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
   body {
     font-family: "Work Sans","Helvetica Neue", Helvetica, sans-serif;
@@ -63,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.2rem;
     letter-spacing: -.5px;
     line-height: 1.5;
-    color: #464646;
+    color: #000000;
   }
 
   // gatsby-image plugin container-----------------

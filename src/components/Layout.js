@@ -20,6 +20,7 @@ const Layout = ({ page, bgColor, children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" />
       </Helmet>
       <GlobalStyles />
       <Header page={page} title={title} />
@@ -40,7 +41,7 @@ const LayoutWrapper = styled.section`
   `}
 
   ${({ page }) => page === "info" && `
-    color: #EBEBEB;
+    color: #FFFFFF;
   `}
 `
 
