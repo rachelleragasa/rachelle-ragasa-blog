@@ -1,16 +1,27 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Layout from "../components/Layout"
-import notFoundStyles from '../styles/pages/404.module.scss'
+import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
 
-export default function NotFound() {
+import Layout from "../components/Layout"
+
+const NotFound = () => {
     return (
         <Layout page="404" bgColor="inherit">
-            <div className={notFoundStyles.notFound__container}>
+            <NotFoundWrapper>
                 <Link to="/">
                     <h1>Sorry, couldn't find that page.</h1>
                 </Link>
-            </div>
+            </NotFoundWrapper>
         </Layout>
     )
 }
+
+const NotFoundWrapper = styled.div`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export default NotFound

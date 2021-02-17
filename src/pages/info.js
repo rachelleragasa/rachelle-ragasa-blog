@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/Layout"
-import infoStyles from "../styles/pages/info.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
 import { above } from "../styles"
 
@@ -10,7 +9,7 @@ const Info = () => {
   const { infoData } = useSiteMetaData()
   return (
     <Layout page="info" bgColor={infoData.background_color}>
-      <InfoBlurb className={infoStyles.info_blurb}>
+      <InfoBlurb>
         <h2>
           <div dangerouslySetInnerHTML={{__html: infoData.description}}></div>
         </h2>
