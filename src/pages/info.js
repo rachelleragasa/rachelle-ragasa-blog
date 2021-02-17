@@ -36,6 +36,11 @@ const Info = () => {
               <a target="blank" rel="noopener noreferrer" href={`https://www.linkedin.com/in/${infoData.contact.linkedin_handle}`}>LinkedIn: {infoData.contact.github_handle}</a>
             </p>
           </li>
+          <li>
+            <p>
+              <a target="blank" rel="noopener noreferrer" href={`https://codepen.io/${infoData.contact.codepen_handle}`}>Codepen: {infoData.contact.github_handle}</a>
+            </p>
+          </li>
         </ul>
       </InfoBlurb>
     </Layout>
