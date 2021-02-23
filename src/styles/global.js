@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.2rem;
     letter-spacing: -.5px;
     line-height: 1.1875;
-    color: #A0A0A0;
+    color: #54595f;
     font-weight: normal;
   }
 
@@ -90,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
     h3 {
       letter-spacing: -.5px;
       line-height: 1.1875;
-      color: #A0A0A0;
+      color: #54595f;
       font-weight: normal;
     }
 

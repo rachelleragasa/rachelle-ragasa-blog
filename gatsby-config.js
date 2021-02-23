@@ -13,7 +13,6 @@ module.exports = {
     infoData: infoData
   },
   plugins: [
-    "gatsby-plugin-sass",
     "gatsby-plugin-styled-components",
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
