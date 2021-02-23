@@ -18,7 +18,7 @@ const Layout = ({ page, bgColor, children }) => {
     >
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>{`${title} | Frontend Developer`}</title>
         <meta name="description" content={description} />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" />
       </Helmet>
@@ -34,7 +34,7 @@ const LayoutWrapper = styled.section`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: ${({ bgColor }) => bgColor ? bgColor : 'inherit'};
+  background-color: ${({ bgColor }) => bgColor ? bgColor : "inherit"};
 
   ${above.tablet`
     display: block;

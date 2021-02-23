@@ -19,12 +19,12 @@ const Header = ({ page, title }) => {
           <AboutLink>
             <Link
               to={
-                page === 'info'
+                page === "info"
                   ? "/"
                   : "/info"
               }
             >
-              {page === 'info'
+              {page === "info"
                 ? "close"
                 : "info"}
             </Link>
