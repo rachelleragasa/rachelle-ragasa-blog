@@ -21,6 +21,20 @@ const Layout = ({ page, bgColor, children }) => {
         <title>{`${title} | Frontend Developer`}</title>
         <meta name="description" content={description} />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M06W228CC5"/>
+        <script>  
+          {`
+          window.dataLayer = window.dataLayer || [];
+
+          function gtag(){
+            dataLayer.push(arguments);
+          }
+
+          gtag("js", new Date());
+          gtag("config", "G-M06W228CC5");
+        `}
+        </script>
       </Helmet>
       <GlobalStyles />
       <Header page={page} title={title} />
