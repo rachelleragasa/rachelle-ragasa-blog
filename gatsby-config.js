@@ -22,10 +22,10 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-yaml",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GA_TRACKING_ID,
+        trackingIds: [process.env.GA_TRACKING_ID],
       },
     },
     {
