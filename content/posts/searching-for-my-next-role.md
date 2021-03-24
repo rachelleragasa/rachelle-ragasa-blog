@@ -34,4 +34,4 @@ It's easy to feel like you're not good enough especially when you get loads of r
 
 Remember that every developer has been in the same position at some point in their career. The key thing to remember is that its a journey of learning and growth. For every step that brings you forward, there is always going to be something that takes you two steps back but its up to you to use those setbacks as motivation to make your journey successful. 
 
-And like I earlier mentioned, interviews can be super nerve-racking but the important thing is to stay calm, think about what you are going to say before you say it and most importantly, just be yourself!
+And like I earlier mentioned, interviews can be super nerve-racking but the important thing to remember is that it's a two way street. You (the prospective candidate) and the company (your prospective employer) so really try to get as much information about the role and company as you can. And from one human to another, stay calm, think about what you are going to say before you say it and most importantly, just be yourself!
