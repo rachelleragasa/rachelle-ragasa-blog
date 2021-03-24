@@ -32,4 +32,6 @@ It's like in Tag Rugby, you can be an amazing player and be able to throw the ba
 ## 3. Believe in yourself.
 It's easy to feel like you're not good enough especially when you get loads of rejections, not being able to give the correct answer or an answer at all during a technical interview or even taking too long to solve a problem during a live coding challenge. All of these, at least in my case, can make one feel like they are not good enough. But rest a sure, you are amazing!
 
-Remember that every developer has been in the same position at some point in their career. The key thing to remember is that its a journey of learning and growth. For every step that brings you forward, there is always going to be something that takes you two steps back but its up to you to use those setbacks as motivation to to make your journey successful. 
+Remember that every developer has been in the same position at some point in their career. The key thing to remember is that its a journey of learning and growth. For every step that brings you forward, there is always going to be something that takes you two steps back but its up to you to use those setbacks as motivation to make your journey successful. 
+
+And like I earlier mentioned, interviews can be super nerve-racking but the important thing is to stay calm, think about what you are going to say before you say it and most importantly, just be yourself!
