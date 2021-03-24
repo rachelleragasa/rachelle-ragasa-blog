@@ -9,7 +9,7 @@ Job hunting and pandemic...Two things that can make one jitter!
 
 At a time where our tomorrow is controlled by ever-changing lockdowns and uncertainty, you're probably wondering why I'm even searching for a new role when my previous was absolutely perfect. Well my friends...Carpe diem! And when life hands you lemons, you make lemonade right? :)
 
-Truth is, I'm moving countries...Yay! Totally not a spolier, but I'll cover moving countries during a pandemic in another blog.
+Truth is, I'm moving countries...Yay! Totally not a spoiler, but I'll cover moving countries during a pandemic in another blog.
 
 So...We all know that with any new job, one must interview. Doesn't that word make you nervous already? You'd think as a dancer whose performed in front of many, I wouldn't get nervous. Well...turns out I'm still human and interviews make my heart race like Usain Bolt when he set a world record at the 2009 World Athletics Championships in Berlin. 
 
